@@ -184,7 +184,7 @@ MonoBehaviour:
   m_OfflineScene: lobby
   m_OnlineScene: 
   m_SpawnPrefabs:
-  - {fileID: 1181053475530724, guid: 4fcb22d5070a6624586af6fd9a8af5b3, type: 2}
+  - {fileID: 1400398235522376, guid: 4fcb22d5070a6624586af6fd9a8af5b3, type: 2}
   - {fileID: 1477729977654302, guid: 765d53464a5f5f64aa7e69cd9e385745, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
@@ -254,7 +254,7 @@ MonoBehaviour:
   lobbySlots: []
   playerTypes:
   - type: 0
-    prefab: {fileID: 1181053475530724, guid: 4fcb22d5070a6624586af6fd9a8af5b3, type: 2}
+    prefab: {fileID: 1400398235522376, guid: 4fcb22d5070a6624586af6fd9a8af5b3, type: 2}
   - type: 1
     prefab: {fileID: 1477729977654302, guid: 765d53464a5f5f64aa7e69cd9e385745, type: 2}
 --- !u!1 &306721436

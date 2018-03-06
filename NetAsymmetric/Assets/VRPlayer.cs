@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using NewtonVR;
 
-public class VRBody : NetworkBehaviour {
+public class VRPlayer : NetworkBehaviour {
 
     public Transform head;
     public Transform leftHand;
@@ -16,34 +16,37 @@ public class VRBody : NetworkBehaviour {
     private Transform nvrRightHandTransform;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        if (!isLocalPlayer)
+            return;
         SetVRPlayer();
-	}
-	
-	// Update is called once per frame
-	void Update () {
 
+    }
 
+    // Update is called once per frame
+    void Update () {
         if (!isLocalPlayer)
             return;
 
-        if(nvrHeadTransfrom)
+        if (nvrHeadTransfrom)
         {
             head.position = nvrHeadTransfrom.position;
             head.rotation = nvrHeadTransfrom.rotation;
         }
 
-        if(nvrLeftHandTransform)
+        if (nvrLeftHandTransform)
         {
-            leftHand.position = nvrLeftHandTransform.localPosition;
+            leftHand.position = nvrLeftHandTransform.position;
             leftHand.rotation = nvrLeftHandTransform.rotation;
         }
 
         if (nvrRightHandTransform)
         {
-            rightHand.position = nvrRightHandTransform.localPosition;
+            rightHand.position = nvrRightHandTransform.position;
             rightHand.rotation = nvrRightHandTransform.rotation;
         }
+
     }
 
     void SetVRPlayer()
