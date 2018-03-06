@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 114697292932010024}
   - component: {fileID: 114007293916788108}
   m_Layer: 0
-  m_Name: VRPlayer
+  m_Name: NetVRPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,6 +306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ac161cc2bbe64479d65d528047882e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nvrPlayerPrefab: {fileID: 114143607947629658, guid: 6259b9f63437a7c418a2dd5edd257ce6,
+    type: 2}
   head: {fileID: 4496114811336214}
   leftHand: {fileID: 4900581293600084}
   rightHand: {fileID: 4587713600187810}

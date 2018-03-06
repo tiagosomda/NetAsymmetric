@@ -6,6 +6,8 @@ using NewtonVR;
 
 public class VRPlayer : NetworkBehaviour {
 
+    public NVRPlayer nvrPlayerPrefab;
+
     public Transform head;
     public Transform leftHand;
     public Transform rightHand;
@@ -20,6 +22,8 @@ public class VRPlayer : NetworkBehaviour {
     {
         if (!isLocalPlayer)
             return;
+
+        Instantiate(nvrPlayerPrefab, transform.position, Quaternion.identity);
         SetVRPlayer();
 
     }
