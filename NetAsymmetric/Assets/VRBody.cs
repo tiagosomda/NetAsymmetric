@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using NewtonVR;
 
-public class VRPlayer : MonoBehaviour {
+public class VRBody : NetworkBehaviour {
 
     public Transform head;
     public Transform leftHand;
@@ -21,7 +22,11 @@ public class VRPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+
+        if (!isLocalPlayer)
+            return;
+
         if(nvrHeadTransfrom)
         {
             head.position = nvrHeadTransfrom.position;
