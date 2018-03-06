@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Game/Scenes/lobby.unity
     guid: fb2a801ad62a0bd428bea697d1802231
   - enabled: 1
+    path: Assets/AsymmetricSample.unity
+    guid: 722427a4c39094c42bb18d5ac7bb60df
+  - enabled: 1
     path: Assets/Game/Scenes/game.unity
     guid: 4df1b2c545495fe4aa96a725538150dc
   - enabled: 1
